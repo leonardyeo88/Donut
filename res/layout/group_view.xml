@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+     android:paddingBottom="10dp">
+    
+    <ImageView
+    android:id="@+id/myImageView"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/eventsimage"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myImageView"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/titlecolor" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/endTime"
+        android:layout_alignBottom="@+id/endTime"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/hoursText"
+        android:text="start time"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myImageView"
+        android:layout_alignLeft="@+id/myImageView"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="25dp"
+        android:text="Date"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hours"
+        android:layout_alignBottom="@+id/hours"
+        android:layout_alignRight="@+id/myImageView"
+        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:text="end time"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/hoursText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/endTime"
+        android:layout_alignBottom="@+id/endTime"
+        android:layout_marginRight="14dp"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/endTime"
+        android:text="-"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Venue"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/myImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/friendsimage" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="title"
+        android:textColor="@color/titlecolor"
+        android:textSize="25sp" />
+
+    
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myImageView2"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:text="date"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/myImageView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="26dp"
+        android:text="name"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/hourText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/events"
+        android:layout_alignBottom="@+id/events"
+        android:layout_alignRight="@+id/username"
+        android:text="end"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hypen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hours"
+        android:layout_alignBottom="@+id/hours"
+        android:layout_toLeftOf="@+id/hourText"
+        android:text="-"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hypen"
+        android:layout_toLeftOf="@+id/hypen"
+        android:text="start"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

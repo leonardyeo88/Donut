@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#d4d4d4"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+            android:src="@drawable/upcomingbackground" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/gray" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewUpcoming"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/expandableListViewCompleted" >
+    </ExpandableListView>
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/hours"
+        android:layout_marginTop="20dp" >
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="title"
+        android:textColor="#00737a"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/errormsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/hourText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hours"
+        android:layout_alignBottom="@+id/hours"
+        android:layout_toRightOf="@+id/hours"
+        android:text="HOURS"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="35dp"
+        android:text="0"
+        android:textColor="#00737a"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eventsText"
+        android:layout_toLeftOf="@+id/eventsText"
+        android:text="0"
+        android:textColor="#00737a"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/eventsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hourText"
+        android:layout_alignBottom="@+id/hourText"
+        android:layout_alignRight="@+id/view1"
+        android:layout_marginRight="18dp"
+        android:text="EVENTS"
+        android:textSize="15sp" />
+
+</RelativeLayout>

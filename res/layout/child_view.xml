@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="venue"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/dateStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/venue"
+        android:layout_below="@+id/venue"
+        android:textStyle="bold"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dateStaticText"
+        android:layout_below="@+id/dateStaticText"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/timeStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/hours"
+        android:layout_below="@+id/hours"
+        android:textStyle="bold"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeStaticText"
+        android:layout_toRightOf="@+id/hoursText"
+        android:text="end time" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeStaticText"
+        android:layout_toLeftOf="@+id/hoursText"
+        android:text="start time"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/hoursText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeStaticText"
+        android:layout_alignBaseline="@+id/startTime"
+        android:layout_alignBottom="@+id/startTime"
+        android:layout_centerHorizontal="true"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/descriptionStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/timeStaticText"
+        android:layout_below="@+id/endTime"
+        android:textStyle="bold"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/descriptionStaticText"
+        android:layout_below="@+id/descriptionStaticText"
+        android:text="description"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/paxStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/description"
+        android:layout_below="@+id/description"
+        android:textStyle="bold"
+        android:text="Pax" />
+
+    <TextView
+        android:id="@+id/pax"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/paxStaticText"
+        android:layout_below="@+id/paxStaticText"
+        android:text="pax" />
+
+    <TextView
+        android:id="@+id/organiserStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pax"
+        android:layout_below="@+id/pax"
+        android:textStyle="bold"
+        android:text="Organiser" />
+
+    <TextView
+        android:id="@+id/organiser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/organiserStaticText"
+        android:layout_below="@+id/organiserStaticText"
+        android:text="organiser" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/organiser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="I volunteer!" />
+
+    <TextView
+        android:id="@+id/venueStaticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/venue"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:text="Venue" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+            android:src="@drawable/loginbackground" />
+
+    <TextView
+        android:id="@+id/loginErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pword"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="E-mail"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/pword"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/email"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/loginErrorMsg"
+        android:layout_alignParentRight="true"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginErrorMsg"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/registerbtn" />
+
+</RelativeLayout>
